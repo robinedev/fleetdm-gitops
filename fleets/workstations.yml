@@ -67,14 +67,14 @@ controls:
   ###########################################################
   apple_settings:
     configuration_profiles:
-      - paths: ../platforms/macos/declaration-profiles/.json
+      - paths: ../platforms/macos/declaration-profiles/*.json
       - paths: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
           - Department - Engineering
           ## so basically what done is add config profile in the macOS folder > config profiles > disable-bluetooth-file-sharing.mobileconfig
   windows_settings:
     configuration_profiles:
-      - paths: ../platforms/windows/configuration-profiles/.xml
+      - paths: ../platforms/windows/configuration-profiles/*.xml
 
   ###########################################################
   # Managed disk encryption
@@ -117,9 +117,9 @@ controls:
   # > using `paths` below.
   ###########################################################
   scripts:
-    - paths: ../platforms/macos/scripts/.sh
-    - paths: ../platforms/windows/scripts/.ps1
-    - paths: ../platforms/linux/scripts/.sh
+    - paths: ../platforms/macos/scripts/*.sh
+    - paths: ../platforms/windows/scripts/*.ps1
+    - paths: ../platforms/linux/scripts/*.sh
 
 ###########################################################
 # Reports
@@ -133,10 +133,10 @@ controls:
 # > using `paths` below.
 ###########################################################
 reports:
-  - paths: ../platforms/all/reports/.yml
-  - paths: ../platforms/macos/reports/.yml
-  - paths: ../platforms/windows/reports/.yml
-  - paths: ../platforms/linux/reports/.yml
+  - paths: ../platforms/all/reports/*.yml
+  - paths: ../platforms/macos/reports/*.yml
+  - paths: ../platforms/windows/reports/*.yml
+  - paths: ../platforms/linux/reports/*.yml
 
 ###########################################################
 # Policies & automations
@@ -151,9 +151,9 @@ reports:
 # > using `paths` below.
 ###########################################################
 policies:
-  - paths: ../platforms/macos/policies/.yml
-  - paths: ../platforms/windows/policies/.yml
-  - paths: ../platforms/linux/policies/.yml
+  - paths: ../platforms/macos/policies/*.yml
+  - paths: ../platforms/windows/policies/*.yml
+  - paths: ../platforms/linux/policies/*.yml
 
 ###########################################################
 # Software available for install
