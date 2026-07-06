@@ -68,7 +68,7 @@ controls:
   apple_settings:
     configuration_profiles:
       - paths: ../platforms/macos/declaration-profiles/*.json
-      - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
+      - paths: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
           - Department - Engineering
           ## so basically what done is add config profile in the macOS folder > config profiles > disable-bluetooth-file-sharing.mobileconfig
@@ -116,6 +116,9 @@ controls:
   # > is intended to run.  It will be included automatically
   # > using `paths` below.
   ###########################################################
+  scripts:
+    - paths: ../platforms/macos/scripts/*.sh
+    - paths: ../platforms/windows/scripts/*.ps1
 
 ###########################################################
 # Reports
@@ -128,6 +131,7 @@ controls:
 # > folder for that platform.  It will be included automatically
 # > using `paths` below.
 ###########################################################
+reports:
 
 ###########################################################
 # Policies & automations
@@ -141,6 +145,8 @@ controls:
 # > is intended to run.  It will be included automatically
 # > using `paths` below.
 ###########################################################
+policies:
+  - paths: ../platforms/macos/policies/*.yml
 
 ###########################################################
 # Software available for install
