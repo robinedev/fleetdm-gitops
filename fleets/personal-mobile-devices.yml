@@ -43,7 +43,7 @@ controls:
   ###########################################################
   apple_settings:
     configuration_profiles:
-      - path: ../lib/ios/declaration-profiles/passcode-settings.json
+      - path: ../lib/ios/configuration-profiles/passcode-settings.json
       # - path: ../lib/ios/configuration-profiles/self-service.mobileconfig
   android_settings:
     configuration_profiles:
