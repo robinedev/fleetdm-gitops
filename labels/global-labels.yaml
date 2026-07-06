@@ -1,4 +1,4 @@
-- name: Department - Engineering
+- name: Department - PeopleOps
   description: Hosts belongs to members of the Engineering department
   label_membership_type: host_vitals
   criteria:

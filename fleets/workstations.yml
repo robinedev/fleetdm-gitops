@@ -70,7 +70,7 @@ controls:
       - paths: ../platforms/macos/declaration-profiles/*.json
       - path: ../platforms/macos/configuration-profiles/disable-bluetooth-file-sharing.mobileconfig
         labels_include_all:
-          - Department - Engineering
+          - Department - PeopleOps
           ## so basically what done is add config profile in the macOS folder > config profiles > disable-bluetooth-file-sharing.mobileconfig
   windows_settings:
     configuration_profiles:
