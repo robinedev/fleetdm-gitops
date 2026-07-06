@@ -1,4 +1,4 @@
 controls:
   apple_settings:
     configuration_profiles:
-      - path: ../lib/ios/configuration-profiles/passcode-settings.json
+      - path: ../platforms/ios/configuration-profiles/passcode-settings.json
